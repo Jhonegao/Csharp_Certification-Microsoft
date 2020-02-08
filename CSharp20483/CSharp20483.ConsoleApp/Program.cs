@@ -23,7 +23,9 @@ namespace CSharp20483.ConsoleApp
             TipoReferencias tr = new TipoReferencias();
             //tr.Executar();
             UsandoTipos ut = new UsandoTipos();
-            ut.Execute();
+            //ut.Execute();
+            OutrosTipos ot = new OutrosTipos();
+            ot.Executar();
             Console.ReadKey();
         }
     }

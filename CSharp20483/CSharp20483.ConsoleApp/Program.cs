@@ -13,9 +13,11 @@ namespace CSharp20483.ConsoleApp
         {
             Console.WriteLine("Hello World\n");
             TiposVariaveis tipos = new TiposVariaveis();
-            tipos.Executar();
-            TipoPorValor tpv = new TipoPorValor();
-            tpv.Executar();
+            //tipos.Executar();
+            TipoIntegrais ti = new TipoIntegrais();
+            //ti.Executar();
+            TiposFlutantes tf = new TiposFlutantes();
+            tf.Executar();
             Console.ReadKey();
         }
     }

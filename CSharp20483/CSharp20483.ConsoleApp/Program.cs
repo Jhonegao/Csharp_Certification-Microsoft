@@ -17,7 +17,9 @@ namespace CSharp20483.ConsoleApp
             TipoIntegrais ti = new TipoIntegrais();
             //ti.Executar();
             TiposFlutantes tf = new TiposFlutantes();
-            tf.Executar();
+            //tf.Executar();
+            TipoEstruturais te = new TipoEstruturais();
+            te.Executar();
             Console.ReadKey();
         }
     }

@@ -25,7 +25,9 @@ namespace CSharp20483.ConsoleApp
             UsandoTipos ut = new UsandoTipos();
             //ut.Execute();
             OutrosTipos ot = new OutrosTipos();
-            ot.Executar();
+            //ot.Executar();
+            Delegados dl = new Delegados();
+            dl.Executar();
             Console.ReadKey();
         }
     }

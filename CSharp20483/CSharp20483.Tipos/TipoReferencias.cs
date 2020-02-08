@@ -31,7 +31,7 @@ namespace CSharp20483.Tipos
         {
             return $"{this.Nome}-{this.Idade}";
         }
-
+          // Interface é um tipo por referencia tem a assinatura dos metodos não a implementação
     }
 
 }

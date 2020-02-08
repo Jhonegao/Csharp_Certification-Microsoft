@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharp20483.Tipos
 {
-    public class TipoEstruturais
+    public class TipoEstruturais : Aulas
     {
         public void Executar()
         {

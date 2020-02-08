@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace CSharp20483.Tipos
 {
-    public class TiposVariaveis
+    public class TiposVariaveis : Aulas
     {
 
         public void Executar()
+
         {
             Console.WriteLine("Tipos: ");
             Console.WriteLine("Tipos por valor");

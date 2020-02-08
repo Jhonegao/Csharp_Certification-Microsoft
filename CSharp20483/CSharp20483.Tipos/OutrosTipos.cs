@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharp20483.Tipos
 {
-    public class OutrosTipos
+    public class OutrosTipos : Aulas
     {
 
         public void Executar()

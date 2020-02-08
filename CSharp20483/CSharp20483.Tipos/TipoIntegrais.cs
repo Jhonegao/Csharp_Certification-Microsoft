@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharp20483.Tipos
 {
-    public class TipoIntegrais
+    public class TipoIntegrais : Aulas
     {
         public void Executar()
         { 

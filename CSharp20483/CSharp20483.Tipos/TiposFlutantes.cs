@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharp20483.Tipos
 {
-    public class TiposFlutantes
+    public class TiposFlutantes : Aulas
     {
         public void Executar()
         {

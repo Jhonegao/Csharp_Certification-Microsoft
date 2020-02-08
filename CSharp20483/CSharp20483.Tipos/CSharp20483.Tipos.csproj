@@ -44,8 +44,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoEstruturais.cs" />
     <Compile Include="TipoIntegrais.cs" />
+    <Compile Include="TipoReferencias.cs" />
     <Compile Include="TiposFlutantes.cs" />
     <Compile Include="TiposVariaveis.cs" />
+    <Compile Include="UsandoTipos.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

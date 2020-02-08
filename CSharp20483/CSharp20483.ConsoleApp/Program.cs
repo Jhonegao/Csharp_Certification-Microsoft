@@ -19,7 +19,11 @@ namespace CSharp20483.ConsoleApp
             TiposFlutantes tf = new TiposFlutantes();
             //tf.Executar();
             TipoEstruturais te = new TipoEstruturais();
-            te.Executar();
+            //te.Executar();
+            TipoReferencias tr = new TipoReferencias();
+            //tr.Executar();
+            UsandoTipos ut = new UsandoTipos();
+            ut.Execute();
             Console.ReadKey();
         }
     }

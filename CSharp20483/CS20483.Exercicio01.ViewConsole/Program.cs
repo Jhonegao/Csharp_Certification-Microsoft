@@ -20,8 +20,9 @@ namespace CS20483.Exercicio01.ViewConsole
             Produto p1 = new Produto("Apple", 100.00m, 10);
             lv.AdicionarVendedor(vendedor1);
             ep.AdicionarEstoque(p1);
-            vm.VenderProduto(5, 10, p1, vendedor1);
 
+            vm.VenderProduto(5, 10, p1, vendedor1);
+            
 
             Console.WriteLine("Tecle:" +
                               "\n1 Para cadastrar Produto//" +

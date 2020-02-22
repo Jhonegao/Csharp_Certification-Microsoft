@@ -46,6 +46,7 @@ namespace Exercicio1_CSharp.Data.Repository
             using (Exercicio01_CSharpContex context = new Exercicio01_CSharpContex())
             {
                 context.Entry<Product>(product).State = System.Data.Entity.EntityState.Modified;
+                
                 context.SaveChanges();
             }
             return "Alterado com sucesso!!";
@@ -54,7 +55,11 @@ namespace Exercicio1_CSharp.Data.Repository
         {
             using (Exercicio01_CSharpContex context = new Exercicio01_CSharpContex())
             {
-                context.Product.Remove(GetById(id));
+                //var product = GetById(id);
+                //context.Entry<Product>(product).State = System.Data.Entity.EntityState.Deleted;
+                var pdb = context.Product.Find(id);
+                context.Product.Remove(pdb);
+                context.SaveChanges();
             }
             return "Deletado com sucesso!!!";
         }

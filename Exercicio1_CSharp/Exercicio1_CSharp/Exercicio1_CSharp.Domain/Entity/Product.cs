@@ -12,5 +12,10 @@ namespace Exercicio1_CSharp.Domain.Entities
         public string Description { get; set; }
         public decimal Price { get; set; }
         public string BarCode { get; set; }
+
+        public override string ToString()
+        {
+            return $"-----\nId: {this.Id}\nNome: {this.Name}\nDescricao: {Description}\nPreço: {Price}\nCódigo: {BarCode}";
+        }
     }
 }

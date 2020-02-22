@@ -66,6 +66,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseRepository.cs" />
     <Compile Include="Context\Exercicio01_CSharpContex.cs" />
     <Compile Include="Migrations\202002221953198_CreateTableProduct.cs" />
     <Compile Include="Migrations\202002221953198_CreateTableProduct.designer.cs">

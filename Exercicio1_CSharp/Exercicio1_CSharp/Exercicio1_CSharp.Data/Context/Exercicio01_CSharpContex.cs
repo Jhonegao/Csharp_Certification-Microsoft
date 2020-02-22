@@ -11,7 +11,10 @@ namespace Exercicio1_CSharp.Data.Context
     public class Exercicio01_CSharpContex : DbContext
     {
         public DbSet<Product> Product { get; set; }
-
+        public DbSet<Storage> Storage { get; set; }
+        public DbSet<LegalPerson> LegalPerson { get; set; }
+        public DbSet<NaturalPerson> NaturalPerson { get; set; }
+        
         public Exercicio01_CSharpContex():base(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\67285\Documents\csharp\Csharp_Certification-Microsoft\Exercicio1_CSharp\Exercicio1_CSharp\Exercicio1_CSharp.Data\Database\DBCSharp.mdf;Integrated Security=True")
         {
 

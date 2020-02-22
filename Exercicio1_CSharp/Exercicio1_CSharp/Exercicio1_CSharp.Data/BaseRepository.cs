@@ -13,39 +13,39 @@ namespace Exercicio1_CSharp.Data
     {
         public List<T> ListAll()
         {
-            List<T> listProduct = new List<T>();
+            List<T> listItem = new List<T>();
             //objeto usado neste contexto e sera descartado
             using (Exercicio01_CSharpContex context = new Exercicio01_CSharpContex())
             {
-                listProduct = context.Set<T>().ToList();
+                listItem = context.Set<T>().ToList();
             }
-            return listProduct;
+            return listItem;
         }
         public T GetById(int id)
         {
-            T product;
+            T item;
             using (Exercicio01_CSharpContex context = new Exercicio01_CSharpContex())
             {
-                product = context.Set<T>().Find(id);
+                item = context.Set<T>().Find(id);
                 //outro metodo, first ou Default pois nao se sabe quantos resultados vem
                 //product = context.Product.Where(p => p.Id == id).FirstOrDefault();
             }
-            return product;
+            return item;
         }
-        public string Create(T product)
+        public string Create(T item)
         {
             using (Exercicio01_CSharpContex context = new Exercicio01_CSharpContex())
             {
-                context.Set<T>().Add(product);
+                context.Set<T>().Add(item);
                 context.SaveChanges();
             }
             return "Criado com sucesso!";
         }
-        public string Update(T product)
+        public string Update(T item)
         {
             using (Exercicio01_CSharpContex context = new Exercicio01_CSharpContex())
             {
-                context.Entry<T>(product).State = System.Data.Entity.EntityState.Modified;
+                context.Entry<T>(item).State = System.Data.Entity.EntityState.Modified;
 
                 context.SaveChanges();
             }

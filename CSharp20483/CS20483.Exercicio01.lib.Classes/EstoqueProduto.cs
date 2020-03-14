@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CS20483.Exercicio01.lib.Classes
+namespace CSharp20483.Exercicio01.lib.Classes
 {
     public class EstoqueProduto
     {

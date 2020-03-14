@@ -1,4 +1,5 @@
 ﻿using CSharp20483.Tipos;
+using CSharp20483.Aula13;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CSharp20483.ConsoleApp
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {

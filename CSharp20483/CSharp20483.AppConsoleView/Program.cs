@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp20483.Tipos
+namespace CSharp20483.AppConsoleView
 {
-    interface Aulas
+    class Program
     {
-        //using abri fechar string file
-        void Executar();
-
+        static void Main(string[] args)
+        {
+        }
     }
 }

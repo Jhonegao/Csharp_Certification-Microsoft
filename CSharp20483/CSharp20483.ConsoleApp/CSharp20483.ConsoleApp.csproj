@@ -50,6 +50,30 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CS20483.Exercicio01.lib.Classes\CS20483.Exercicio01.lib.Classes.csproj">
+      <Project>{689fc437-efb2-41eb-ae6f-3521a12abd7e}</Project>
+      <Name>CS20483.Exercicio01.lib.Classes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CS20483.Exercicio01.ViewConsole\CS20483.Exercicio01.ViewConsole.csproj">
+      <Project>{73db7a1f-516e-40d0-8f8a-6f0fd3d1c766}</Project>
+      <Name>CS20483.Exercicio01.ViewConsole</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharp20483.AppConsoleView\CSharp20483.AppConsoleView.csproj">
+      <Project>{b2d61378-f446-44f5-ad3b-195e7780038b}</Project>
+      <Name>CSharp20483.AppConsoleView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharp20483.Aula13\CSharp20483.Aula13.csproj">
+      <Project>{4aa2b685-fb7b-4143-aee7-2519915fd08e}</Project>
+      <Name>CSharp20483.Aula13</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharp20483.Aula2Fixed\CS20483.Aula2.csproj">
+      <Project>{226ffd91-83b0-4d3d-8862-eb5896f72378}</Project>
+      <Name>CS20483.Aula2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSharp20483.Chat\CSharp20483.Chat.csproj">
+      <Project>{2b3d70c1-955f-492f-9789-2da41d2f70d6}</Project>
+      <Name>CSharp20483.Chat</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CSharp20483.Tipos\CSharp20483.Tipos.csproj">
       <Project>{f0f98753-c765-4fb5-9485-be97cf63a0f4}</Project>
       <Name>CSharp20483.Tipos</Name>

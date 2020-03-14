@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp20483.Tipos
+namespace CSharp20483.Aula13
 {
-    interface Aulas
+    public class Funcionario : Pessoa
     {
-        //using abri fechar string file
-        void Executar();
-
     }
 }

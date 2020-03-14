@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CS20483.Exercicio01.ViewConsole
+namespace CSharp20483.Exercicio01.ViewConsole
 {
     class Program
     {

@@ -27,27 +27,31 @@ namespace CSharp20483.Aula13
             #region Json
             Stopwatch sw = new Stopwatch();
             sw.Start();
-            // Chamando metodo para serializar para Json
             string json = Serializa(pessoas);
-            // Salvando em arquivo a string em formato Json
-            SalvarArquivo("Pessoas.json", json);
-            // Lendo do arquivo em Json
-            string jsonArq = LerArquivo("Pessoas.json");
-            // Chamando o metodo para deserializar a string de Json para Objeto
-            var listaPessoas = Deserializa(jsonArq);
-            foreach (var item in listaPessoas)
-            {
-                Console.WriteLine($"Pessoa {item.Nome} - {item.Sobrenome} - idade:{item.Idade}");
-            }
+            string jsonArq = "";
+            List<Pessoa> listaPessoas = new List<Pessoa>();
+            List<Pessoa> pessoasb = new List<Pessoa>(); 
+
+            Parallel.Invoke(
+                            () => SalvarArquivo("Pessoas.json", json),
+                            () => jsonArq = LerArquivo("Pessoas.json"),
+                            () => listaPessoas = Deserializa(jsonArq),
+                            () => ConverterParaBinario(pessoas),
+                            () => pessoasb = ConverterDeBinario(),
+                            () => Parallel.ForEach(listaPessoas, item =>
+                            {
+                                Console.WriteLine($"Pessoa Parapel : { item.Nome}");
+                            }),
+                            );
+            Parallel.ForEach
+
             #endregion
             sw.Stop();
             Console.WriteLine($"Temspo de execução Json:{(sw.ElapsedMilliseconds / 1000)} ");
             #region Binario
             // Chamar um método de conversão para Binario
             // Salvar o arquivo em formato binario
-            sw.Start();
-            ConverterParaBinario(pessoas);
-            List<Pessoa> pessoasb = ConverterDeBinario();
+
             Console.WriteLine($"Convertido Binario Pessoas");
             foreach (var item in pessoasb)
             {
@@ -111,6 +115,7 @@ namespace CSharp20483.Aula13
         string Serializa<T>(List<T> lista)
         {
             string pessoaJson = JsonConvert.SerializeObject(lista);
+            System.Threading.Thread.Sleep(1000);
             return pessoaJson;
         }
         List<Pessoa> Deserializa(string json)

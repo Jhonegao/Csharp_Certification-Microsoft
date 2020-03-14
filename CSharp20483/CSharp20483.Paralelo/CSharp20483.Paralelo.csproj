@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1FCB6DA3-2FDF-4A6E-A489-AE96BDBC2EC0}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>CSharp20483.ConsoleAppGeral</RootNamespace>
-    <AssemblyName>CSharp20483.ConsoleAppGeral</AssemblyName>
+    <ProjectGuid>{4850971E-A23D-46DF-906E-46B772AF6EFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharp20483.Paralelo</RootNamespace>
+    <AssemblyName>CSharp20483.Paralelo</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,21 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Envia.cs" />
+    <Compile Include="Multiplos.cs" />
+    <Compile Include="Paralelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CSharp20483.Aula13\CSharp20483.Aula13.csproj">
-      <Project>{4aa2b685-fb7b-4143-aee7-2519915fd08e}</Project>
-      <Name>CSharp20483.Aula13</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CSharp20483.Paralelo\CSharp20483.Paralelo.csproj">
-      <Project>{4850971e-a23d-46df-906e-46b772af6efa}</Project>
-      <Name>CSharp20483.Paralelo</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

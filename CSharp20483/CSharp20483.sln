@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp20483.Aula13", "CShar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp20483.ConsoleAppGeral", "CSharp20483.ConsoleAppGeral\CSharp20483.ConsoleAppGeral.csproj", "{1FCB6DA3-2FDF-4A6E-A489-AE96BDBC2EC0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp20483.Paralelo", "CSharp20483.Paralelo\CSharp20483.Paralelo.csproj", "{4850971E-A23D-46DF-906E-46B772AF6EFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,10 @@ Global
 		{1FCB6DA3-2FDF-4A6E-A489-AE96BDBC2EC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FCB6DA3-2FDF-4A6E-A489-AE96BDBC2EC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FCB6DA3-2FDF-4A6E-A489-AE96BDBC2EC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4850971E-A23D-46DF-906E-46B772AF6EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4850971E-A23D-46DF-906E-46B772AF6EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4850971E-A23D-46DF-906E-46B772AF6EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4850971E-A23D-46DF-906E-46B772AF6EFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

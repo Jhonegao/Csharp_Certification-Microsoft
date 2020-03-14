@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -24,6 +25,8 @@ namespace CSharp20483.Aula13
             };
 
             #region Json
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
             // Chamando metodo para serializar para Json
             string json = Serializa(pessoas);
             // Salvando em arquivo a string em formato Json
@@ -32,13 +35,26 @@ namespace CSharp20483.Aula13
             string jsonArq = LerArquivo("Pessoas.json");
             // Chamando o metodo para deserializar a string de Json para Objeto
             var listaPessoas = Deserializa(jsonArq);
+            foreach (var item in listaPessoas)
+            {
+                Console.WriteLine($"Pessoa {item.Nome} - {item.Sobrenome} - idade:{item.Idade}");
+            }
             #endregion
-
+            sw.Stop();
+            Console.WriteLine($"Temspo de execução Json:{(sw.ElapsedMilliseconds / 1000)} ");
             #region Binario
             // Chamar um método de conversão para Binario
             // Salvar o arquivo em formato binario
+            sw.Start();
             ConverterParaBinario(pessoas);
-
+            List<Pessoa> pessoasb = ConverterDeBinario();
+            Console.WriteLine($"Convertido Binario Pessoas");
+            foreach (var item in pessoasb)
+            {
+                Console.WriteLine($"Nome: {item.Nome} Sobrenome {item.Sobrenome}");
+            }
+            sw.Stop();
+            Console.WriteLine($"Temspo de execução Binario:{(sw.ElapsedMilliseconds / 1000)} ");
             // Ler do arquivo em formato binario
             // Converter de binario para objeto 
             #endregion
@@ -97,9 +113,9 @@ namespace CSharp20483.Aula13
             string pessoaJson = JsonConvert.SerializeObject(lista);
             return pessoaJson;
         }
-        List<object> Deserializa(string json)
+        List<Pessoa> Deserializa(string json)
         {
-            var objetos = JsonConvert.DeserializeObject<List<object>>(json);
+            var objetos = JsonConvert.DeserializeObject<List<Pessoa>>(json);
             return objetos;
         }
     }
